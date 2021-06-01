@@ -1,0 +1,65 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Tuesday, June 1, 2021 4:01:44 PM
+   Source : \\pbtpfil01\AdminClient_Prod\
+     Dest : c:\Admin Client\Client\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /R:1 /W:5 
+
+------------------------------------------------------------------------------
+
+	                 190	\\pbtpfil01\AdminClient_Prod\
+	                   3	\\pbtpfil01\AdminClient_Prod\app.publish\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_141_0_0\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_142_1_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_142_1_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_142_1_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_142_1_0\Windows\F1CustomRoutingUtility\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_0_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_0_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_0_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_0_0\Windows\F1CustomRoutingUtility\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_2_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_2_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_2_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_143_2_0\Windows\F1CustomRoutingUtility\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_0_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_0_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_0_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_0_0\Windows\F1CustomRoutingUtility\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_1_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_1_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_1_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_1_0\Windows\F1CustomRoutingUtility\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_2_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_2_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_2_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_144_2_0\Windows\F1CustomRoutingUtility\
+	                 168	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_145_0_0\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_145_0_0\ssf_adapter\
+	                   0	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_145_0_0\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\app.publish\Application Files\AdminClient_4_145_0_0\Windows\F1CustomRoutingUtility\
+	                   1	\\pbtpfil01\AdminClient_Prod\package\
+	                   1	\\pbtpfil01\AdminClient_Prod\package\services\
+	                   0	\\pbtpfil01\AdminClient_Prod\package\services\metadata\
+	                   1	\\pbtpfil01\AdminClient_Prod\package\services\metadata\core-properties\
+	                   5	\\pbtpfil01\AdminClient_Prod\ssf_adapter\
+	                   1	\\pbtpfil01\AdminClient_Prod\Windows\
+	                   1	\\pbtpfil01\AdminClient_Prod\Windows\F1CustomRoutingUtility\
+	                   1	\\pbtpfil01\AdminClient_Prod\_rels\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        40         0        40         0         0         0
+   Files :      1394         0      1394         0         0         0
+   Bytes :  845.38 m         0  845.38 m         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : Tuesday, June 1, 2021 4:01:44 PM
+

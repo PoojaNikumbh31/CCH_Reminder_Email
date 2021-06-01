@@ -1,0 +1,252 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="testSS" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,736" sap2010:WorkflowViewState.IdRef="testSS_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:Sterling_RPA_Custom_Activities;assembly=Sterling RPA Custom Activities" xmlns:sa="clr-namespace:Smartsheet.Api;assembly=smartsheet-csharp-sdk" xmlns:sam="clr-namespace:Smartsheet.Api.Models;assembly=smartsheet-csharp-sdk" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ubac="clr-namespace:UiPath.BAF.Activities.ContextModel;assembly=UiPath.Smartsheet.Activities" xmlns:ubme="clr-namespace:UiPath.BAF.Models.Entity;assembly=UiPath.Smartsheet" xmlns:ubmr="clr-namespace:UiPath.BAF.Models.Response;assembly=UiPath.Smartsheet" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.Smartsheet" xmlns:ucm="clr-namespace:UiPath.CodeGen.Model;assembly=UiPath.Smartsheet" xmlns:ucmc="clr-namespace:UiPath.CodeGen.Models.Connection;assembly=UiPath.Smartsheet" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.Smartsheet.Activities;assembly=UiPath.Smartsheet.Activities" xmlns:usar="clr-namespace:UiPath.Smartsheet.Activities.Reports;assembly=UiPath.Smartsheet.Activities" xmlns:usm="clr-namespace:UiPath.Smartsheet.Models;assembly=UiPath.Smartsheet" xmlns:uss="clr-namespace:UiPath.Smartsheet.Services;assembly=UiPath.Smartsheet" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Smartsheet.Models</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Smartsheet</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="testSS" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtRowID" />
+      <Variable x:TypeArguments="usm:SmartsheetConnection" Name="conn" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,114.5</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,114.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,165.5 300,184.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BuildDataTable DataTable="[dtRowID]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;RowID&quot; type=&quot;xs:string&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:BuildDataTable>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,184.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <usa:SmartsheetScopeActivity DesignConnectionRequest="{x:Null}" ExistingConnection="{x:Null}" SelectedDesignAuthType="{x:Null}" SwaggerClient="{x:Null}" Connection="[conn]" DesignConnectionEnabled="False" DisplayName="Smartsheet Application Scope" ExistingConnectionType="usm:SmartsheetConnection" sap:VirtualizedContainerService.HintSize="655,1001" sap2010:WorkflowViewState.IdRef="SmartsheetScopeActivity_1" RefreshCacheEnabled="False" SelectedAuthType="API Token" TelemetryEnabled="False" ThrowExceptionOnError="False">
+            <usa:SmartsheetScopeActivity.Body>
+              <ActivityAction x:TypeArguments="ubac:ScopeActivityContext">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ubac:ScopeActivityContext" Name="ScopeActivityContext" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="621,860" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="ubmr:ResponseStatus" Name="respStatus" />
+                    <Variable x:TypeArguments="sam:Report" Name="rpt" />
+                    <Variable x:TypeArguments="x:Int32" Name="index" />
+                    <Variable x:TypeArguments="x:String" Name="availableRowIDs" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="579,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading Report...&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <usar:GetReport BusinessEntityName="{x:Null}" ConfiguredBusinessEntity="GetReport" CrudOperation="Function" DesignConnectionEnabled="False" DisplayName="Get Report" sap:VirtualizedContainerService.HintSize="579,236" sap2010:WorkflowViewState.IdRef="GetReport_1" ScopeActivityType="usa:SmartsheetScopeActivity" Status="[respStatus]">
+                    <usar:GetReport.BusinessEntity>
+                      <ubme:BusinessEntity AuthFields="{x:Null}" Connection="{x:Null}" Id="{x:Null}" Name="GetReport">
+                        <ubme:BusinessEntity.AllFields>
+                          <scg:List x:TypeArguments="ubme:EntityField" Capacity="0" />
+                        </ubme:BusinessEntity.AllFields>
+                        <ubme:BusinessEntity.EntityMetadata>
+                          <ubme:EntityMetadata Description="{x:Null}" Metadata="{x:Reference __ReferenceID0}" EligibleOperations="-1" IsCustomEntity="False" Name="GetReport" />
+                        </ubme:BusinessEntity.EntityMetadata>
+                        <ubme:BusinessEntity.Metadata>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
+                            <x:Type Type="sa:SmartsheetClient" x:Key="Client" />
+                          </scg:Dictionary>
+                        </ubme:BusinessEntity.Metadata>
+                        <ubme:BusinessEntity.SelectedFields>
+                          <scg:List x:TypeArguments="ubme:EntityField" Capacity="0" />
+                        </ubme:BusinessEntity.SelectedFields>
+                        <ubme:BusinessEntity.TelemetryProperties>
+                          <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                        </ubme:BusinessEntity.TelemetryProperties>
+                      </ubme:BusinessEntity>
+                    </usar:GetReport.BusinessEntity>
+                    <usar:GetReport.PopulatedAPIParameters>
+                      <scg:Dictionary x:TypeArguments="x:String, ubme:EntityField" />
+                    </usar:GetReport.PopulatedAPIParameters>
+                    <usar:GetReport.SelectedFields>
+                      <scg:List x:TypeArguments="ubme:EntityField" Capacity="8">
+                        <ucm:CodeGenEntityField ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:Int64" DataType="Int64" Description="the Id of the report" DisplayName="ReportId" FieldName="ReportId" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="True" ShouldFilterOnChange="False">
+                          <ucm:CodeGenEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="x:Int64">2508737660381060</InArgument>
+                          </ucm:CodeGenEntityField.ArgumentValue>
+                        </ucm:CodeGenEntityField>
+                        <ucm:CodeGenEntityField ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="If populated will download the report to the specified folder" DisplayName="Local Folder" FieldName="Local Folder" FormDataType="FolderPicker" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                          <ucm:CodeGenEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="x:String">C:\Users\Pooja.nikumbh\Documents\UiPath\CCH_RemainderEmailBOT</InArgument>
+                          </ucm:CodeGenEntityField.ArgumentValue>
+                        </ucm:CodeGenEntityField>
+                        <ucm:CodeGenEntityField ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" SampleValue="{x:Null}" Value="{x:Array Type=x:Object}" ArgumentDirection="In" ArgumentType="sam:ReportInclusion[]" DataType="ReportInclusion[]" Description="used to specify the optional objects to include." DisplayName="Include" FieldName="Include" FormDataType="MultiSelect" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                          <ucm:CodeGenEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="sam:ReportInclusion[]" />
+                          </ucm:CodeGenEntityField.ArgumentValue>
+                        </ucm:CodeGenEntityField>
+                        <ucm:CodeGenEntityField ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="Number of rows per page" DisplayName="Page Size" FieldName="Page Size" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                          <ucm:CodeGenEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="x:Int32">10000</InArgument>
+                          </ucm:CodeGenEntityField.ArgumentValue>
+                        </ucm:CodeGenEntityField>
+                        <ucm:CodeGenEntityField ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="Page number (1-based) to return" DisplayName="Page" FieldName="Page" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                          <ucm:CodeGenEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ucm:CodeGenEntityField.ArgumentValue>
+                        </ucm:CodeGenEntityField>
+                        <ucm:CodeGenEntityField ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" ArgumentDirection="Out" ArgumentType="sam:Report" DataType="Report" Description="The report object" DisplayName="Report" FieldName="Report" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                          <ucm:CodeGenEntityField.ArgumentValue>
+                            <OutArgument x:TypeArguments="sam:Report">[rpt]</OutArgument>
+                          </ucm:CodeGenEntityField.ArgumentValue>
+                        </ucm:CodeGenEntityField>
+                      </scg:List>
+                    </usar:GetReport.SelectedFields>
+                    <usar:GetReport.ServiceFactory>
+                      <uss:SmartsheetServiceFactory />
+                    </usar:GetReport.ServiceFactory>
+                    <usar:GetReport.TelemetryProperties>
+                      <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                    </usar:GetReport.TelemetryProperties>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </usar:GetReport>
+                  <If Condition="[respStatus.Success]" DisplayName="Success?" sap:VirtualizedContainerService.HintSize="579,208" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;saved&quot;]" />
+                    </If.Then>
+                    <If.Else>
+                      <Throw Exception="[New SystemException(&quot;Accessing Report Failed : &quot;+respStatus.Message)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    </If.Else>
+                  </If>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="579,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Add to Queue ended&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <s:LogMessage Logs="{x:Null}" DisplayName="Log message" sap:VirtualizedContainerService.HintSize="579,22" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="Add to Queue ended" />
+                </Sequence>
+              </ActivityAction>
+            </usa:SmartsheetScopeActivity.Body>
+            <usa:SmartsheetScopeActivity.ConnectionParameters>
+              <scg:List x:TypeArguments="ucmc:ConnectionParam" Capacity="4">
+                <ucmc:ConnectionParam Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" Description="The API token to use" Mandatory="True" Name="API Access Token">
+                  <ucmc:ConnectionParam.ArgumentValue>
+                    <InArgument x:TypeArguments="x:String">1lz5y6t7dcf9y7rab1ncnp6a5f</InArgument>
+                  </ucmc:ConnectionParam.ArgumentValue>
+                </ucmc:ConnectionParam>
+              </scg:List>
+            </usa:SmartsheetScopeActivity.ConnectionParameters>
+            <usa:SmartsheetScopeActivity.DesignConnectionParameters>
+              <scg:List x:TypeArguments="ucmc:ConnectionParam" Capacity="0" />
+            </usa:SmartsheetScopeActivity.DesignConnectionParameters>
+            <usa:SmartsheetScopeActivity.ServiceFactory>
+              <uss:SmartsheetServiceFactory />
+            </usa:SmartsheetScopeActivity.ServiceFactory>
+            <usa:SmartsheetScopeActivity.SupportedAuthTypes>
+              <scg:List x:TypeArguments="x:String" Capacity="4">
+                <x:String>Existing Connection</x:String>
+                <x:String>OAuth Authorization Code</x:String>
+                <x:String>API Token</x:String>
+                <x:String xml:space="preserve">OAuth Passthrough </x:String>
+              </scg:List>
+            </usa:SmartsheetScopeActivity.SupportedAuthTypes>
+            <usa:SmartsheetScopeActivity.TelemetryProperties>
+              <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+            </usa:SmartsheetScopeActivity.TelemetryProperties>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </usa:SmartsheetScopeActivity>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID1</x:Reference>
+  </Flowchart>
+</Activity>
